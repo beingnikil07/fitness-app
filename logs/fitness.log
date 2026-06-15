@@ -220,3 +220,316 @@
 2026-06-15T10:13:34.174+05:30  INFO 18965 --- [fitness-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-06-15T10:13:34.177+05:30  INFO 18965 --- [fitness-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-06-15T10:13:34.189+05:30  INFO 18965 --- [fitness-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-15T23:07:59.431+05:30  INFO 9513 --- [fitness-app] [main] c.project.fitness.FitnessAppApplication  : Starting FitnessAppApplication using Java 21.0.11 with PID 9513 (/home/nikhilrana07/Documents/Boot_Projects/fitness-app-main/target/classes started by nikhilrana07 in /home/nikhilrana07/Documents/Boot_Projects/fitness-app-main)
+2026-06-15T23:07:59.433+05:30 DEBUG 9513 --- [fitness-app] [main] c.project.fitness.FitnessAppApplication  : Running with Spring Boot v3.5.4, Spring v6.2.9
+2026-06-15T23:07:59.434+05:30  INFO 9513 --- [fitness-app] [main] c.project.fitness.FitnessAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-15T23:08:01.181+05:30  INFO 9513 --- [fitness-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-15T23:08:01.183+05:30  INFO 9513 --- [fitness-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2026-06-15T23:08:01.234+05:30  INFO 9513 --- [fitness-app] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.project.fitness.repository.ActivityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-06-15T23:08:01.235+05:30  INFO 9513 --- [fitness-app] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.project.fitness.repository.RecommendationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-06-15T23:08:01.237+05:30  INFO 9513 --- [fitness-app] [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.project.fitness.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-06-15T23:08:01.238+05:30  INFO 9513 --- [fitness-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 0 JDBC repository interfaces.
+2026-06-15T23:08:01.258+05:30  INFO 9513 --- [fitness-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-15T23:08:01.260+05:30  INFO 9513 --- [fitness-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15T23:08:01.307+05:30  INFO 9513 --- [fitness-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2026-06-15T23:08:02.246+05:30  INFO 9513 --- [fitness-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-15T23:08:02.268+05:30  INFO 9513 --- [fitness-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-15T23:08:02.268+05:30  INFO 9513 --- [fitness-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-06-15T23:08:02.333+05:30  INFO 9513 --- [fitness-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-15T23:08:02.334+05:30  INFO 9513 --- [fitness-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2806 ms
+2026-06-15T23:08:02.627+05:30  INFO 9513 --- [fitness-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-15T23:08:02.733+05:30  INFO 9513 --- [fitness-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2026-06-15T23:08:02.786+05:30  INFO 9513 --- [fitness-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-15T23:08:03.273+05:30  INFO 9513 --- [fitness-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15T23:08:03.324+05:30  INFO 9513 --- [fitness-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-15T23:08:03.878+05:30  INFO 9513 --- [fitness-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a5ce4b8
+2026-06-15T23:08:03.880+05:30  INFO 9513 --- [fitness-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-15T23:08:04.044+05:30  WARN 9513 --- [fitness-app] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15T23:08:04.121+05:30  INFO 9513 --- [fitness-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-15T23:08:05.584+05:30  INFO 9513 --- [fitness-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15T23:08:05.702+05:30  INFO 9513 --- [fitness-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T23:08:06.256+05:30 DEBUG 9513 --- [fitness-app] [main] c.p.f.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-06-15T23:08:06.436+05:30 TRACE 9513 --- [fitness-app] [main] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {securityConfig=com.project.fitness.config.SecurityConfig$$SpringCGLIB$$0@1eda853f}
+2026-06-15T23:08:06.454+05:30  INFO 9513 --- [fitness-app] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-06-15T23:08:06.455+05:30  WARN 9513 --- [fitness-app] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-06-15T23:08:06.692+05:30  WARN 9513 --- [fitness-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15T23:08:07.215+05:30 DEBUG 9513 --- [fitness-app] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-06-15T23:08:07.883+05:30  INFO 9513 --- [fitness-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-06-15T23:08:07.901+05:30  INFO 9513 --- [fitness-app] [main] c.project.fitness.FitnessAppApplication  : Started FitnessAppApplication in 9.388 seconds (process running for 10.606)
+2026-06-15T23:08:07.905+05:30  WARN 9513 --- [fitness-app] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-15T23:08:07.906+05:30  WARN 9513 --- [fitness-app] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-15T23:09:09.021+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15T23:09:09.021+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-15T23:09:09.024+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-15T23:09:09.053+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain defined as 'securityFilterChain' in [class path resource [com/project/fitness/config/SecurityConfig.class]] matching [any request] and having filters [DisableEncodeUrl, WebAsyncManagerIntegration, SecurityContextHolder, HeaderWriter, Logout, JwtAuthentication, RequestCacheAware, SecurityContextHolderAwareRequest, AnonymousAuthentication, SessionManagement, ExceptionTranslation, Authorization] (1/1)
+2026-06-15T23:09:09.054+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/users/register
+2026-06-15T23:09:09.055+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/12)
+2026-06-15T23:09:09.056+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/12)
+2026-06-15T23:09:09.059+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/12)
+2026-06-15T23:09:09.060+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/12)
+2026-06-15T23:09:09.063+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/12)
+2026-06-15T23:09:09.064+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2026-06-15T23:09:09.064+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking JwtAuthenticationFilter (6/12)
+2026-06-15T23:09:09.064+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/12)
+2026-06-15T23:09:09.065+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/12)
+2026-06-15T23:09:09.067+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/12)
+2026-06-15T23:09:09.069+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/12)
+2026-06-15T23:09:09.069+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2026-06-15T23:09:09.071+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2026-06-15T23:09:09.072+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/12)
+2026-06-15T23:09:09.072+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (12/12)
+2026-06-15T23:09:09.073+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] estMatcherDelegatingAuthorizationManager : Authorizing POST /api/users/register
+2026-06-15T23:09:09.075+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] estMatcherDelegatingAuthorizationManager : Checking authorization on POST /api/users/register using org.springframework.security.authorization.SingleResultAuthorizationManager@34f2755c
+2026-06-15T23:09:09.076+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/users/register
+2026-06-15T23:09:09.329+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-2] c.p.fitness.controller.AuthController    : Register request received for username:mikrana07
+2026-06-15T23:09:09.472+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id 
+    from
+        user u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+2026-06-15T23:09:09.722+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    insert 
+    into
+        user
+        (created_at, email, first_name, last_name, password, roles, updated_at, username, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-06-15T23:09:09.790+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2026-06-15T23:09:37.429+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain defined as 'securityFilterChain' in [class path resource [com/project/fitness/config/SecurityConfig.class]] matching [any request] and having filters [DisableEncodeUrl, WebAsyncManagerIntegration, SecurityContextHolder, HeaderWriter, Logout, JwtAuthentication, RequestCacheAware, SecurityContextHolderAwareRequest, AnonymousAuthentication, SessionManagement, ExceptionTranslation, Authorization] (1/1)
+2026-06-15T23:09:37.429+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/users/login
+2026-06-15T23:09:37.430+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/12)
+2026-06-15T23:09:37.430+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/12)
+2026-06-15T23:09:37.430+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/12)
+2026-06-15T23:09:37.430+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/12)
+2026-06-15T23:09:37.430+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/12)
+2026-06-15T23:09:37.431+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2026-06-15T23:09:37.431+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking JwtAuthenticationFilter (6/12)
+2026-06-15T23:09:37.431+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/12)
+2026-06-15T23:09:37.432+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/12)
+2026-06-15T23:09:37.432+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/12)
+2026-06-15T23:09:37.432+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/12)
+2026-06-15T23:09:37.432+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2026-06-15T23:09:37.432+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2026-06-15T23:09:37.433+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/12)
+2026-06-15T23:09:37.433+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (12/12)
+2026-06-15T23:09:37.433+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] estMatcherDelegatingAuthorizationManager : Authorizing POST /api/users/login
+2026-06-15T23:09:37.434+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] estMatcherDelegatingAuthorizationManager : Checking authorization on POST /api/users/login using org.springframework.security.authorization.SingleResultAuthorizationManager@34f2755c
+2026-06-15T23:09:37.434+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/users/login
+2026-06-15T23:09:37.439+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-3] c.p.fitness.controller.AuthController    : Login request received for the username:mikrana07
+2026-06-15T23:09:37.440+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.s.authentication.ProviderManager     : Authenticating request with DaoAuthenticationProvider (1/1)
+2026-06-15T23:09:37.563+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.roles,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2026-06-15T23:09:37.596+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-3] c.p.f.service.CustomUserDetailsService   : CustomUserDetailsService CREATED
+2026-06-15T23:09:37.725+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2026-06-15T23:09:37.725+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-3] c.project.fitness.service.AuthService    : User logged In successfully
+2026-06-15T23:09:37.822+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2026-06-15T23:10:16.979+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain defined as 'securityFilterChain' in [class path resource [com/project/fitness/config/SecurityConfig.class]] matching [any request] and having filters [DisableEncodeUrl, WebAsyncManagerIntegration, SecurityContextHolder, HeaderWriter, Logout, JwtAuthentication, RequestCacheAware, SecurityContextHolderAwareRequest, AnonymousAuthentication, SessionManagement, ExceptionTranslation, Authorization] (1/1)
+2026-06-15T23:10:16.980+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/activities
+2026-06-15T23:10:16.981+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/12)
+2026-06-15T23:10:16.981+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/12)
+2026-06-15T23:10:16.981+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/12)
+2026-06-15T23:10:16.982+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/12)
+2026-06-15T23:10:16.982+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/12)
+2026-06-15T23:10:16.982+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2026-06-15T23:10:16.982+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking JwtAuthenticationFilter (6/12)
+2026-06-15T23:10:16.983+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/12)
+2026-06-15T23:10:16.983+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/12)
+2026-06-15T23:10:16.983+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/12)
+2026-06-15T23:10:16.983+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/12)
+2026-06-15T23:10:16.983+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2026-06-15T23:10:16.984+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2026-06-15T23:10:16.984+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/12)
+2026-06-15T23:10:16.984+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (12/12)
+2026-06-15T23:10:16.984+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] estMatcherDelegatingAuthorizationManager : Authorizing GET /api/activities
+2026-06-15T23:10:16.985+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] estMatcherDelegatingAuthorizationManager : Checking authorization on GET /api/activities using org.springframework.security.authorization.AuthenticatedAuthorizationManager@7bdf05f2
+2026-06-15T23:10:16.987+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.s.w.a.ExceptionTranslationFilter     : Sending AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]] to authentication entry point since access is denied
+
+org.springframework.security.authorization.AuthorizationDeniedException: Access Denied
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:99) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at com.project.fitness.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:34) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.2.jar:6.5.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.2.jar:6.5.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.2.jar:6.5.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-06-15T23:10:17.003+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-06-15T23:10:17.003+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2026-06-15T23:10:17.018+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain defined as 'securityFilterChain' in [class path resource [com/project/fitness/config/SecurityConfig.class]] matching [any request] and having filters [DisableEncodeUrl, WebAsyncManagerIntegration, SecurityContextHolder, HeaderWriter, Logout, JwtAuthentication, RequestCacheAware, SecurityContextHolderAwareRequest, AnonymousAuthentication, SessionManagement, ExceptionTranslation, Authorization] (1/1)
+2026-06-15T23:10:17.018+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-06-15T23:10:17.019+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/12)
+2026-06-15T23:10:17.019+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/12)
+2026-06-15T23:10:17.020+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/12)
+2026-06-15T23:10:17.020+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/12)
+2026-06-15T23:10:17.021+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/12)
+2026-06-15T23:10:17.021+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2026-06-15T23:10:17.021+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking JwtAuthenticationFilter (6/12)
+2026-06-15T23:10:17.022+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/12)
+2026-06-15T23:10:17.022+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/12)
+2026-06-15T23:10:17.022+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/12)
+2026-06-15T23:10:17.022+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/12)
+2026-06-15T23:10:17.022+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/12)
+2026-06-15T23:10:17.023+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (12/12)
+2026-06-15T23:10:17.023+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] estMatcherDelegatingAuthorizationManager : Authorizing GET /error
+2026-06-15T23:10:17.023+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] estMatcherDelegatingAuthorizationManager : Checking authorization on GET /error using org.springframework.security.authorization.SingleResultAuthorizationManager@34f2755c
+2026-06-15T23:10:17.023+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2026-06-15T23:10:17.038+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2026-06-15T23:10:17.038+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2026-06-15T23:10:27.117+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain defined as 'securityFilterChain' in [class path resource [com/project/fitness/config/SecurityConfig.class]] matching [any request] and having filters [DisableEncodeUrl, WebAsyncManagerIntegration, SecurityContextHolder, HeaderWriter, Logout, JwtAuthentication, RequestCacheAware, SecurityContextHolderAwareRequest, AnonymousAuthentication, SessionManagement, ExceptionTranslation, Authorization] (1/1)
+2026-06-15T23:10:27.118+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/activities
+2026-06-15T23:10:27.119+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/12)
+2026-06-15T23:10:27.119+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/12)
+2026-06-15T23:10:27.119+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/12)
+2026-06-15T23:10:27.119+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/12)
+2026-06-15T23:10:27.119+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (5/12)
+2026-06-15T23:10:27.119+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2026-06-15T23:10:27.119+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking JwtAuthenticationFilter (6/12)
+2026-06-15T23:10:27.311+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.roles,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2026-06-15T23:10:27.316+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-5] c.p.f.service.CustomUserDetailsService   : CustomUserDetailsService CREATED
+2026-06-15T23:10:27.319+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2026-06-15T23:10:27.320+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking RequestCacheAwareFilter (7/12)
+2026-06-15T23:10:27.320+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderAwareRequestFilter (8/12)
+2026-06-15T23:10:27.320+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking AnonymousAuthenticationFilter (9/12)
+2026-06-15T23:10:27.320+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking SessionManagementFilter (10/12)
+2026-06-15T23:10:27.321+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Did not set SecurityContextHolder since already authenticated UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=mikrana07, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]
+2026-06-15T23:10:27.325+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] s.CompositeSessionAuthenticationStrategy : Preparing session with ChangeSessionIdAuthenticationStrategy (1/1)
+2026-06-15T23:10:27.326+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking ExceptionTranslationFilter (11/12)
+2026-06-15T23:10:27.326+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Invoking AuthorizationFilter (12/12)
+2026-06-15T23:10:27.327+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] estMatcherDelegatingAuthorizationManager : Authorizing GET /api/activities
+2026-06-15T23:10:27.327+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] estMatcherDelegatingAuthorizationManager : Checking authorization on GET /api/activities using org.springframework.security.authorization.AuthenticatedAuthorizationManager@7bdf05f2
+2026-06-15T23:10:27.327+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/activities
+2026-06-15T23:10:27.369+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-5] c.p.f.controller.ActivityController      : getting all the activities 
+2026-06-15T23:10:27.370+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-5] c.p.fitness.service.ActivityService      : Fetching activities for user ba1cc7f1-8ac1-4fdb-9566-52aeeefcd5b5
+2026-06-15T23:10:27.381+05:30 DEBUG 9513 --- [fitness-app] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        a1_0.id,
+        a1_0.additional_metrices,
+        a1_0.calories_burned,
+        a1_0.created_at,
+        a1_0.duration,
+        a1_0.start_time,
+        a1_0.type,
+        a1_0.updated_at,
+        a1_0.user_id 
+    from
+        activity a1_0 
+    left join
+        user u1_0 
+            on u1_0.user_id=a1_0.user_id 
+    where
+        u1_0.user_id=?
+2026-06-15T23:10:27.395+05:30  INFO 9513 --- [fitness-app] [http-nio-8080-exec-5] c.p.fitness.service.ActivityService      : Found 0 activities for user ba1cc7f1-8ac1-4fdb-9566-52aeeefcd5b5
+2026-06-15T23:10:27.409+05:30 TRACE 9513 --- [fitness-app] [http-nio-8080-exec-5] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match request to [Is Secure]
+2026-06-15T23:11:07.223+05:30  INFO 9513 --- [fitness-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-15T23:11:07.226+05:30  INFO 9513 --- [fitness-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-06-15T23:11:07.233+05:30  INFO 9513 --- [fitness-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T23:11:07.237+05:30  INFO 9513 --- [fitness-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-15T23:11:07.249+05:30  INFO 9513 --- [fitness-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
